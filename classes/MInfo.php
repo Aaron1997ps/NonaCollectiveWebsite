@@ -1,10 +1,9 @@
 <?php
 
 class MInfo {
-    const OK = "ok";
-    const LOGGED_IN = "Logged in";
-    const LOGGED_OUT = "Logged out";
-    const UPDATED = "Updated";
-    const REGISTERED = "Registered";
-    const SHOWPIN = "SHOW PIN";
+    const OK = 101;
+    const LOGGED_IN = 102;
+    const LOGGED_OUT = 103;
+    const UPDATED = 104;
+    const REGISTERED = 105;
 }
