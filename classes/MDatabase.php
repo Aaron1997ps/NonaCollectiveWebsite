@@ -11,7 +11,7 @@ class MDatabase {
         return $db;
     }
 
-    public function __construct($host = "mahlke-concepts.de", $username = "", $password = "", $port = 3306, $database = ""){
+    public function __construct($host = "mahlke-concepts.de", $username = "nona", $password = "77ul0nGVF7L8VItU", $port = 3306, $database = "nona"){
         $this->host = $host;
         $this->username = $username;
         $this->password = $password;
