@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+
+    <body>
+        <h1>(╯°□°）╯︵ ┻━┻</h1>
+    </body>
+</html>

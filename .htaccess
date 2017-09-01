@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/assets/.*$
+
+RewriteRule ^([^?]*)$ controller.php?path=$1 [NC,L,QSA]
