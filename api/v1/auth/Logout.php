@@ -2,6 +2,7 @@
 
 if (!loggedIn()) {
     insertError(MError::RESTRICTED_ACCESS);
+    return;
 }
 
 $res = MDatabaseAuth::resetUser($_SESSION["username"]);

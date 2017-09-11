@@ -15,7 +15,7 @@ if (file_exists($_GET["path"] . '.php')) {
 die(json_encode($GLOBALS['response']));
 
 function loggedIn() {
-    return MBase::getUser() == true;
+    return MBase::getUser() != null;
 }
 
 function insertError($msg) {

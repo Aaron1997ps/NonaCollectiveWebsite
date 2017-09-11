@@ -24,7 +24,7 @@ include_once (realpath("./") . "/MBase.php");
 include_once (realpath("./") . "/classes/MDatabase.php");
 
 if (strpos($_GET['path'], 'api/') !== false && strpos($_GET['path'], 'api/') == 0) {
-    include(MBase::getBase() . 'api/controller.php');
+    include('/api/controller.php');
     return;
 }
 
@@ -45,6 +45,6 @@ if (file_exists($_GET["path"])) {
     if ($_GET["path"] === "") {
         include("index.php");
     } else {
-        include(MBase::getBase() . "404.html");
+        include("/404.html");
     }
 }

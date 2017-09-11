@@ -19,7 +19,7 @@ class MUser {
         $this->sessionExpires = $sessionExpires;
     }
 
-    public function clearSession() {
+    public static function clearSession() {
         $_SESSION["session"] = null;
         $_SESSION["username"] = null;
     }
@@ -34,7 +34,7 @@ class MUser {
 
         $res = MDatabaseAuth::getUser($_SESSION["username"]);
 
-        if ($res == null) return MError::RESTRICTED_ACCESS;
+        if ($res == null) return null;
 
 
         if (!($res->session == $_SESSION["session"])) {

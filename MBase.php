@@ -15,10 +15,6 @@ class MBase {
 
         require_once ("classes/MUser.php");
         self::$user = MUser::getCurrentUser();
-
-        if (self::$user == MError::RESTRICTED_ACCESS || self::$user == MError::DATABASE_ERROR || self::$user == MError::QUERY_ERROR) {
-            self::$user = null;
-        }
     }
 
     public static function getUser() {
@@ -26,7 +22,7 @@ class MBase {
         return self::$user;
     }
 
-    public static function generateString($length = 15, $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+    public static function generateString($length = 32, $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') {
         $charactersLength = strlen($characters);
         $randomString = '';
 
