@@ -1,4 +1,7 @@
 <?php
+
+
+
 $forbiddenFolder = ["tools", "lang", "classes", "templates"];
 
 ini_set('display_errors', 1);
@@ -16,6 +19,8 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
+// Load Composer
+require 'vendor/autoload.php';
 
 //load base
 include_once (realpath("./") . "/classes/MInfo.php");
@@ -24,27 +29,51 @@ include_once (realpath("./") . "/MBase.php");
 include_once (realpath("./") . "/classes/MDatabase.php");
 
 if (strpos($_GET['path'], 'api/') !== false && strpos($_GET['path'], 'api/') == 0) {
-    include('/api/controller.php');
+    include(realpath("./") . '/api/controller.php');
     return;
 }
 
 MBase::initialize();
 
 //TODO validate request authentication
-if (file_exists($_GET["path"])) {
-    if (is_dir($_GET["path"])) {
-        if (!file_exists($_GET["path"] . '/index.php')) {
-            include(MBase::getBase() . "404.html");
-        }
+$get = "/" . $_GET["path"];
+$r = new Router($get);
 
-        include($_GET["path"] . '/index.php');
-        return;
+$loader = new Twig_Loader_Filesystem('views');
+$twig = new Twig_Environment($loader);
+
+if ($r->route("/test")) {
+
+    $template = $twig->load('test.html.twig');
+
+    $data = array('navigation' => [
+        array('href' => "test", 'caption' => "tes123t"),
+        array('href' => "test2", 'caption' => "test2"),
+        array('href' => "test2", 'caption' => "test23"),
+    ]);
+
+    die($template->render($data));
+}
+
+if ($r->route("/")) {
+
+    $template = $twig->load('index.html.twig');
+
+    $data = array('navigation' => [
+    array('href' => "test", 'caption' => "test"),
+    array('href' => "test2", 'caption' => "test2"),
+    ]);
+
+    die($template->render($data));
+}
+
+class Router {
+    private $r = null;
+    function __construct($r) {
+        $this->r = $r;
     }
-    include($_GET["path"]);
-} else {
-    if ($_GET["path"] === "") {
-        include("index.php");
-    } else {
-        include("/404.html");
+
+    function route($route) {
+        return 0 === strpos($this->r, $route);
     }
 }

@@ -12,7 +12,7 @@ if (empty($_POST["username"]) || empty($_POST["password"])) {
 
 $user = $_POST["username"];
 $pass = $_POST["password"];
-$pass = hash_hmac("sha256", $pass, "Eh3qDl4bV2VftW6OKrQW$5D5nmpWHQWER)Qb%YaPXQ&kB5bRG5f3YnfDU%4DU%z97");
+$pass = hash_hmac("sha256", $pass, MBase::getConfig()["salt"]);
 
 $DBUser = MDatabaseAuth::getUser($_POST["username"]);
 

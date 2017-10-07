@@ -1,0 +1,11 @@
+{
+  "debug": true,
+  "database": {
+    "host": "mahlke-concepts.de",
+    "port": 3306,
+    "database": "nona",
+    "username": "nona",
+    "password": "77ul0nGVF7L8VItU"
+  },
+  "salt": "Eh3qDl4bV2VftW6OKrQW$5D5nmpWHQWER)Qb%YaPXQ&kB5bRG5f3YnfDU%4DU%z97"
+}

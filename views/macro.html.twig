@@ -1,0 +1,18 @@
+{% macro navbar(background, alwaysVisible) %}
+    {#Defaults#}
+    {% set background = background|default(false) %}
+    {% set alwaysVisible = alwaysVisible|default(true) %}
+
+    {#Code#}
+    Hey ich = navbar,
+    {% if background %}
+        ich habe einen background
+    {% endif %}
+
+    {% if alwaysVisible %}
+        ich bin immer da
+    {% endif %}
+
+
+
+{% endmacro %}

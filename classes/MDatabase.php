@@ -11,12 +11,14 @@ class MDatabase {
         return $db;
     }
 
-    public function __construct($host = "mahlke-concepts.de", $username = "nona", $password = "77ul0nGVF7L8VItU", $port = 3306, $database = "nona"){
-        $this->host = $host;
-        $this->username = $username;
-        $this->password = $password;
-        $this->port = $port;
-        $this->database = $database;
+    public function __construct($host = null, $username = null, $password = null, $port = null, $database = null) {
+        $cfg = MBase::getConfig()["database"];
+
+        $this->host     = $host     != null ? $host     : $cfg["host"];
+        $this->username = $username != null ? $username : $cfg["username"];
+        $this->password = $password != null ? $password : $cfg["password"];
+        $this->port     = $port     != null ? $port     : $cfg["port"];
+        $this->database = $database != null ? $database : $cfg["database"];
     }
 
     public function prepareTables() {

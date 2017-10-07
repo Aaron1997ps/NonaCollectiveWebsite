@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Amaranth | {% block title %}Home{% endblock %}</title>
+</head>
+<body>
+{% from "macro.html.twig" import navbar %}
+{{ navbar(true, true) }}
+
+{% block content %}
+    Hallo ich bin lol
+{% endblock %}
+</body>
+</html>

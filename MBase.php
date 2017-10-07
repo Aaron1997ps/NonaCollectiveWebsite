@@ -6,10 +6,14 @@ class MBase {
     /** @var MUser logged-in user instance */
     public static $user = null;
 
+    private static $config = null;
+
 
     public static function initialize() {
         if (self::$initialized)
             return;
+
+        self::$config = json_decode(file_get_contents("config.json"), true);
 
         self::$initialized = true;
 
@@ -31,5 +35,10 @@ class MBase {
         }
 
         return $randomString;
+    }
+
+    public static function getConfig() {
+        self::initialize();
+        return self::$config;
     }
 }

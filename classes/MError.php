@@ -8,4 +8,5 @@ class MError {
     const ARGUMENT_ERROR = 305;
     const UNKNOWN_TASK = 306;
     const QUERY_ERROR = 307;
+    const TFA_REQUIRED = 308;
 }
