@@ -2,18 +2,13 @@
 
 
 
-$forbiddenFolder = ["tools", "lang", "classes", "templates"];
+$whitelist = ["assets"];
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-foreach ($forbiddenFolder as $item) {
-    $pos = strpos($_GET["path"], $item);
-    if ($pos . "" == "0") {
-        die("403 Forbidden!");
-    }
-}
+
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -33,4 +28,16 @@ if (strpos($_GET['path'], 'api/') !== false && strpos($_GET['path'], 'api/') == 
 
 MBase::initialize();
 
-include("index.php");
+
+
+if ($_GET['path'] != "") {
+    foreach ($whitelist as $item) {
+        $pos = strpos($_GET["path"], $item);
+        if ($pos . "" == "0") {
+            die($_GET['path']);
+        }
+    }
+    die("505");
+} else {
+    include("index.php");
+}
