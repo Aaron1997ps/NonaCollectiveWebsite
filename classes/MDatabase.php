@@ -80,9 +80,9 @@ class MDatabaseAuth {
      * @param $username string
      * @return MUser|null
      */
-    public static function getUser($username) {
+    public static function getTimeslots($username) {
         $db = MDatabase::init();
-        $res = $db->executeQuery("SELECT * FROM `tbl_user` WHERE `username`='" . $db->quote($username). "';");
+        $res = $db->executeQuery("SELECT `id_timeslot`, `StartTimeslot` FROM `tbl_timeslots` WHERE `username`='" . $db->quote($username). "';");
 
         if (!$res) {
             $db->close();
