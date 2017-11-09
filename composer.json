@@ -1,6 +1,0 @@
-{
-    "name": "aaron1997ps/nonacollectivewebsite",
-    "require": {
-        "twig/twig": "~2.0"
-    }
-}
