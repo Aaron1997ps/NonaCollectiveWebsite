@@ -19,7 +19,7 @@
             </main>
         </div>
 
-        <?php include("modules/discordInvitation.php") ?>
+        <?php include("modules/footer.php") ?>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
