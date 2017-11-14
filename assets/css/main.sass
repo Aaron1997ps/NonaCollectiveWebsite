@@ -1,17 +1,60 @@
 $text: #888
+$darktext: #333
 $discord: #7289DA
+$bg: #1D202B
 
-@import "modules/discordInvitation.sass"
-@import "modules/footer.sass"
+@import "modules/_modules.sass"
 
 *
-    font-family: "Source Code Pro", sans-serif
+	font-family: "Source Sans Pro", sans-serif
+
+html
+	font-size: 20px
 
 body
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 100vh
+	margin: 0
+	padding: 0
 
-    h1
-        color: $text
+	h1
+		color: $text
+
+
+.m-module-content
+	max-width: 950px
+	width: 90%
+	margin: 0 auto
+
+
+.m-wrap
+	background: $bg
+	min-height: 100vh
+
+
+.m-headline-container
+	text-align: center
+	.m-headline
+		font:
+			size: 2.5em
+			weight: 700
+		color: white
+
+		&::after
+			display: block
+			content: ''
+			height: 1px
+			width: 35px
+			background: rgba(white, 0.7)
+			margin: 20px auto
+
+	.m-subheadline
+		display: inline-block
+		font:
+			size: 0.9em
+			weight: 300
+		max-width: 20em
+		color: rgba(white, 0.7)
+		margin-bottom: 20px
+
+
+
+

@@ -1,67 +1,70 @@
 .m-module-discordInvitation
-  .m-module-content
-    max-width: 850px
+	.m-module-content
+		max-width: 780px
+		height: 300px
+		background-image: url("/assets/img/discord_bg.png")
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		transform: translate(0, 20px)
 
-    height: 300px
-    background-image: url("/assets/img/discord_bg.png")
-    border-radius: 5px
 
-    display: flex
-    justify-content: center
+		.m-vert-div
+			display: flex
+			justify-content: space-between
 
-    .m-vert-div
-      display: flex
-      justify-content: space-between
+			.m-vert
+				display: flex
+				justify-content: center
+				margin: 25px 100px
 
-      .m-vert
-        display: flex
-        justify-content: center
-        margin: 25px 100px
+				.m-logo
+					width: 100px
+					height: auto
 
-        .m-logo
-          width: 100px
-          height: auto
+				&:last-of-type
+					margin: 25px 100px 25px 20px
 
-        &:last-of-type
-          margin: 25px 100px 25px 20px
+				.m-hor-div
+					display: flex
+					justify-content: center
+					flex-direction: column
 
-        .m-hor-div
-          display: flex
-          justify-content: center
-          flex-direction: column
+					.m-hor
+						.m-title
+							color: white
+							font-size: 25px
+							font-weight: 600
+							margin: 8px 0 8px 0
 
-          .m-hor
-            .m-title
-              color: white
-              font-size: 25px
-              font-weight: 600
+						.m-subtitle
+							color: rgba(white, 0.8)
+							font-size: 18px
+							font-weight: 100
+							margin: 0
 
-              margin: 8px 0 8px 0
+						.m-inviteButton
+							margin-top: 45px
+							background-color: white
+							color: $discord
+							display: inline-flex
+							border-radius: 3px
+							padding: 10px 20px 10px 10px
+							align-items: center
+							transition: all 400ms cubic-bezier(1,0,0,1)
 
-            .m-subtitle
-              color: rgba(white, 0.8)
-              font-size: 18px
-              font-weight: 100
+							&:hover
+								transform: scale(1.08)
+								cursor: pointer
 
-              margin: 0
+							.m-discord
+								margin-right: 15px
 
-            .m-inviteButton
-              margin-top: 45px
-              background-color: white
-              color: $discord
+							.m-text
+								text-decoration: none
+								color: $discord
+								font:
+									weight: 600
+									size: 15px
 
-              display: inline-flex
 
-              border-radius: 3px
-
-              padding: 10px 20px 10px 10px
-
-              align-items: center
-
-              .m-discord
-                margin-right: 15px
-
-              .m-text
-                font:
-                  weight: 600
-                  size: 15px
