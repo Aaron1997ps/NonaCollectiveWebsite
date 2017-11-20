@@ -1,3 +1,7 @@
+var speed = 150;
+var step = 50;
+
+
 $(document).ready(function () {
     if (window.navigator.msPointerEnabled)
         return false;
@@ -11,13 +15,12 @@ $(document).ready(function () {
     $(window).on('mousewheel DOMMouseScroll', function (e) {
         scrolling = true;
         e.preventDefault();
-        where += e.originalEvent.deltaY + 50;
+        where += e.originalEvent.deltaY + step;
         where = Math.min(Math.max(where, 0), $('body').height());
         time = 0;
 
         var current = $(window).scrollTop();
         var dest = where - current;
-        var speed = 150;
         clearInterval(interval);
 
         if (!scrolling) {
