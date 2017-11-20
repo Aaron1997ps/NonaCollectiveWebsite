@@ -1,5 +1,5 @@
 var speed = 150;
-var step = 50;
+var distance = 50;
 
 
 $(document).ready(function () {
@@ -15,12 +15,19 @@ $(document).ready(function () {
     $(window).on('mousewheel DOMMouseScroll', function (e) {
         scrolling = true;
         e.preventDefault();
-        where += e.originalEvent.deltaY + step;
+        where += e.originalEvent.deltaY;
+
+        if (where > 0)
+            where += distance;
+        else
+            where -= distance;
+
         where = Math.min(Math.max(where, 0), $('body').height());
         time = 0;
 
         var current = $(window).scrollTop();
         var dest = where - current;
+        
         clearInterval(interval);
 
         if (!scrolling) {
