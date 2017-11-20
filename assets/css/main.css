@@ -94,7 +94,7 @@
 
 .m-module-footer {
   background: #181B23;
-  width: 100vw;
+  width: 100%;
   padding: 80px 0; }
   .m-module-footer .m-module-content {
     -webkit-box-pack: center;
@@ -113,7 +113,7 @@
       width: 35px;
       height: auto; }
     .m-module-footer .m-module-content .m-copyright {
-      padding: 0px 35px 0px 50px;
+      padding: 0 35px 0 50px;
       color: rgba(255, 255, 255, 0.4);
       font-size: 13px;
       font-weight: 100; }
