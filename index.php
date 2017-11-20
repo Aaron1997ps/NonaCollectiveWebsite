@@ -15,11 +15,11 @@
                 <div class="m-landing">
                     <div class="m-parallax-container">
                         <div class="m-canvas">
-                            <img src="assets/img/nature_scene/SunnyClouds.png">
-                            <img src="assets/img/nature_scene/NatureSummerHillsFront.png">
-                            <img src="assets/img/nature_scene/NatureSummerHillsMid.png">
-                            <img src="assets/img/nature_scene/NatureSummerHillsBack.png">
                             <img src="assets/img/nature_scene/Sky_Gradient.png">
+                            <img src="assets/img/nature_scene/NatureSummerHillsBack.png">
+                            <img src="assets/img/nature_scene/NatureSummerHillsMid.png">
+                            <img src="assets/img/nature_scene/NatureSummerHillsFront.png">
+                            <img src="assets/img/nature_scene/SunnyClouds.png">
                         </div>
                     </div>
                 </div>
@@ -88,10 +88,12 @@
 
                 <?php include("modules/discordInvitation.php") ?>
                 <?php include("modules/footer.php") ?>
+
             </main>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/landingParallax.js"></script>
     </body>
 </html>
