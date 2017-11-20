@@ -17,7 +17,7 @@ $(document).ready(function () {
         e.preventDefault();
         where += e.originalEvent.deltaY;
 
-        if (where > 0)
+        if (e.originalEvent.deltaY > 0)
             where += distance;
         else
             where -= distance;
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
         var current = $(window).scrollTop();
         var dest = where - current;
-        
+
         clearInterval(interval);
 
         if (!scrolling) {
