@@ -235,10 +235,10 @@
       height: 100%;
       overflow: hidden; }
     .m-landing .m-parallax-container .m-sky-gradient {
-      background-image: -webkit-gradient(linear, left bottom, left top, from(blue), to(red));
-      background-image: -webkit-linear-gradient(bottom, blue, red);
-      background-image: -o-linear-gradient(bottom, blue, red);
-      background-image: linear-gradient(to top, blue, red);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#dbeeff), to(#2486ff));
+      background-image: -webkit-linear-gradient(bottom, #dbeeff, #2486ff);
+      background-image: -o-linear-gradient(bottom, #dbeeff, #2486ff);
+      background-image: linear-gradient(to top, #dbeeff, #2486ff);
       height: 100%;
       width: 100%; }
     .m-landing .m-parallax-container img, .m-landing .m-parallax-container .m-sky-gradient {
