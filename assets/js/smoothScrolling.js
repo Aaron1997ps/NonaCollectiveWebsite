@@ -33,7 +33,7 @@ $(document).ready(function () {
         if (!scrolling) {
             interval = setInterval(function () {
                 var scrollto = Math.inout(time, current, dest, speed);
-                console.log(scrollto);
+                //console.log(scrollto);
 
                 $(window).scrollTop(scrollto);
 
