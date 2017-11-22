@@ -23,6 +23,7 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/elementSlider.js"></script>
         <script src="assets/js/landingParallax.js"></script>
         <script src="assets/js/smoothScrolling.js"></script>
     </body>
