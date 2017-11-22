@@ -1,0 +1,123 @@
+.m-module-updates
+	margin-bottom: 160px
+	.m-module-content
+
+		.m-headline-container
+			margin-bottom: 40px
+
+		.m-btn-container
+			display: flex
+			justify-content: center
+
+			.m-more-devlogs
+				display: inline-flex
+				justify-content: center
+				align-items: center
+				height: 2.5em
+				padding: 0 2.3em
+				color: white
+				font-size: 0.7em
+				border: 1px solid white
+					radius: 99em
+				transition: all 200ms ease-in-out
+
+				&:hover
+					cursor: pointer
+					background: white
+					color: $darktext
+					transform: scale(1.1)
+					box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.18)
+
+		.m-updates-container
+			font-size: 0.8rem
+
+			.m-update-row
+				width: 100%
+				height: 120px
+				display: flex
+
+				.m-update
+					flex: 1
+					border:
+						radius: 8px
+					background:
+						size: 130%
+						position: center
+					margin-bottom: 40px
+					position: relative
+					overflow: hidden
+					transition: all 150ms ease-in-out
+
+					&:hover
+						transform: scale(1.1)
+						cursor: pointer
+						background-size: 100%
+						box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.18)
+
+						.m-overlay
+							top: 100%
+
+					.m-overlay
+						height: 100%
+						width: 100%
+						background: radial-gradient(313.19px at 42.73% 67.17%, rgba(131, 119, 223, 0.4) 0%, rgba(59, 61, 122, 0.4) 100%)
+						transition: all 150ms ease-in-out
+						top: 0
+						left: 0
+
+					.m-update-text
+						position: absolute
+						bottom: 10%
+						left: 10%
+						color: white
+
+						.m-update-tag
+							font:
+								size: 0.7em
+
+						.m-headline
+							font:
+								size: 1.1em
+								weight: 600
+
+					&:not(:last-child)
+						margin-right: 40px
+
+
+.m-landing
+	width: 100%
+	height: 100%
+
+	.m-parallax-container
+		width: 100%
+		height: 100%
+
+		.m-canvas
+			position: relative
+			width: 100%
+			height: 100%
+			overflow: hidden
+
+		.m-sky-gradient
+			background-image: linear-gradient(to top, #dbeeff, #2486ff)
+			height: 100%
+			width: 100%
+
+		.m-clouds
+
+		img, .m-sky-gradient
+			height: 100%
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%, 0)
+
+			//transition: all 2000ms
+
+
+
+
+
+
+
+
