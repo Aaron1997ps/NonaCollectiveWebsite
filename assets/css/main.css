@@ -250,76 +250,81 @@
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0); }
 
-.m-module.m-element-slider .m-elements-container {
-  width: 100%;
-  position: relative;
-  height: 110px; }
-  .m-module.m-element-slider .m-elements-container .m-element {
-    position: absolute;
-    height: 110px;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-pixelated;
-    image-rendering: pixelated;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-01 {
-      opacity: 0;
-      -webkit-transform: translate(-50%, -50%) scale(0);
-      -ms-transform: translate(-50%, -50%) scale(0);
-      transform: translate(-50%, -50%) scale(0);
-      left: -10%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-02 {
-      opacity: .4;
-      -webkit-transform: translate(-50%, -50%) scale(0.4);
-      -ms-transform: translate(-50%, -50%) scale(0.4);
-      transform: translate(-50%, -50%) scale(0.4);
-      left: 5%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-03 {
-      opacity: .6;
-      -webkit-transform: translate(-50%, -50%) scale(0.6);
-      -ms-transform: translate(-50%, -50%) scale(0.6);
-      transform: translate(-50%, -50%) scale(0.6);
-      left: 20%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-04 {
-      opacity: .8;
-      -webkit-transform: translate(-50%, -50%) scale(0.8);
-      -ms-transform: translate(-50%, -50%) scale(0.8);
-      transform: translate(-50%, -50%) scale(0.8);
-      left: 35%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-05 {
-      opacity: 1;
-      -webkit-transform: translate(-50%, -50%) scale(1);
-      -ms-transform: translate(-50%, -50%) scale(1);
-      transform: translate(-50%, -50%) scale(1);
-      left: 50%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-06 {
-      opacity: .8;
-      -webkit-transform: translate(-50%, -50%) scale(0.8);
-      -ms-transform: translate(-50%, -50%) scale(0.8);
-      transform: translate(-50%, -50%) scale(0.8);
-      left: 65%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-07 {
-      opacity: .6;
-      -webkit-transform: translate(-50%, -50%) scale(0.6);
-      -ms-transform: translate(-50%, -50%) scale(0.6);
-      transform: translate(-50%, -50%) scale(0.6);
-      left: 80%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-08 {
-      opacity: .4;
-      -webkit-transform: translate(-50%, -50%) scale(0.4);
-      -ms-transform: translate(-50%, -50%) scale(0.4);
-      transform: translate(-50%, -50%) scale(0.4);
-      left: 95%; }
-    .m-module.m-element-slider .m-elements-container .m-element.m-09 {
-      opacity: 0;
-      -webkit-transform: translate(-50%, -50%) scale(0);
-      -ms-transform: translate(-50%, -50%) scale(0);
-      transform: translate(-50%, -50%) scale(0);
-      left: 110%; }
+.m-module.m-element-slider {
+  overflow: hidden; }
+  .m-module.m-element-slider .m-elements-container {
+    width: 100%;
+    position: relative;
+    height: 110px; }
+    .m-module.m-element-slider .m-elements-container .m-element {
+      position: absolute;
+      height: 110px;
+      -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-01 {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
+        left: -10%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-02 {
+        opacity: .4;
+        -webkit-transform: translate(-50%, -50%) scale(0.4);
+        -ms-transform: translate(-50%, -50%) scale(0.4);
+        transform: translate(-50%, -50%) scale(0.4);
+        left: 5%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-03 {
+        opacity: .6;
+        -webkit-transform: translate(-50%, -50%) scale(0.6);
+        -ms-transform: translate(-50%, -50%) scale(0.6);
+        transform: translate(-50%, -50%) scale(0.6);
+        left: 20%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-04 {
+        opacity: .8;
+        -webkit-transform: translate(-50%, -50%) scale(0.8);
+        -ms-transform: translate(-50%, -50%) scale(0.8);
+        transform: translate(-50%, -50%) scale(0.8);
+        left: 35%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-05 {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+        left: 50%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-06 {
+        opacity: .8;
+        -webkit-transform: translate(-50%, -50%) scale(0.8);
+        -ms-transform: translate(-50%, -50%) scale(0.8);
+        transform: translate(-50%, -50%) scale(0.8);
+        left: 65%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-07 {
+        opacity: .6;
+        -webkit-transform: translate(-50%, -50%) scale(0.6);
+        -ms-transform: translate(-50%, -50%) scale(0.6);
+        transform: translate(-50%, -50%) scale(0.6);
+        left: 80%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-08 {
+        opacity: .4;
+        -webkit-transform: translate(-50%, -50%) scale(0.4);
+        -ms-transform: translate(-50%, -50%) scale(0.4);
+        transform: translate(-50%, -50%) scale(0.4);
+        left: 95%; }
+      .m-module.m-element-slider .m-elements-container .m-element.m-09 {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
+        left: 110%; }
 
 * {
   font-family: "Source Sans Pro", sans-serif; }
