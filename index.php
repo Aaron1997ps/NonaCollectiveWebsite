@@ -12,83 +12,28 @@
             </header>
             <main class="m-view m-view-main">
 
-                <div class="m-landing">
-                    <div class="m-parallax-container">
-                        <div class="m-canvas">
-                            <div class="m-sky-gradient"></div>
-                            <img src="assets/img/nature_scene/NatureSummerHillsBack.png">
-                            <img src="assets/img/nature_scene/NatureSummerHillsMid.png">
-                            <img src="assets/img/nature_scene/NatureSummerHillsFront.png">
-                            <!--<img src="assets/img/nature_scene/SunnyClouds.png">-->
-                            <div class="m-clouds">
+                <?php include("modules/landing.php") ?>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="m-module m-module-updates">
+                <div class="m-module m-element-slider">
                     <div class="m-module-content">
-                        <div class="m-headline-container">
-                            <div class="m-headline">Updates</div>
-                            <div class="m-subheadline">What else would you expect this text to say? Here are updates to the game you fool.</div>
-                        </div>
-                        <div class="m-updates-container">
-                            <div class="m-update-row">
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 3.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 5.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 4.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m-update-row">
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 3.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 4.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                                <div class="m-update" style="background-image: url('assets/img/updates/image 5.png')">
-                                    <div class="m-overlay"></div>
-                                    <div class="m-update-text">
-                                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
-                                        <div class="m-headline">Region Update - Sky</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-btn-container">
-                            <div class="m-btn m-btn-round m-more-devlogs">
-                                <div class="m-text">see more devlogs</div>
-                            </div>
+                        <img class="m-arrow m-left" src="assets/img/icons/amaranth-arrow-left.svg">
+                        <img class="m-arrow m-right" src="assets/img/icons/amaranth-arrow-right.svg">
+                        <div class="m-elements-container">
+                            <img class="m-element m-01" src="assets/img/player/earth.png">
+                            <img class="m-element m-02" src="assets/img/player/fire.png">
+                            <img class="m-element m-03" src="assets/img/player/ice.png">
+                            <img class="m-element m-04" src="assets/img/player/neutral.png">
+                            <img class="m-element m-05" src="assets/img/player/metal.png">
+                            <img class="m-element m-06" src="assets/img/player/water.png">
+                            <img class="m-element m-07" src="assets/img/player/shadow.png">
+                            <img class="m-element m-08" src="assets/img/player/nature.png">
+                            <img class="m-element m-09" src="assets/img/player/light.png">
                         </div>
                     </div>
                 </div>
 
+                <?php include("modules/updates.php") ?>
                 <?php include("modules/discordInvitation.php") ?>
                 <?php include("modules/footer.php") ?>
 
