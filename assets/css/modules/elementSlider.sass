@@ -1,25 +1,32 @@
 
 .m-module.m-element-slider
+	background:
+		image: url("../img/backgrounds/slider-fire-background.png")
+		size: cover
+		position: center
+	width: 100%
+	height: 489px
 
 	.m-module-content
-		background-image: url(../../img/backgrounds/slider-fire-background.png)
-		width: 1796
-		height: 489
+		position: relative
+
+		.m-arrow
+			position: absolute
+			top: 50%
+			z-index: 20
+			transform: translate(0, -50%)
+
+			&.m-left
+				left: 1px
+
+			&.m-right
+				right: 1px
 
 	.m-elements-container
 		width: 100%
 		position: relative
 		height: 110px
 
-		.m-arrow
-			position: absolute
-			top: 50px
-
-		.m-left
-			left: 1px
-
-		.m-right
-			right: 1px
 
 		.m-element
 			position: absolute
