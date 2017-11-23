@@ -250,6 +250,11 @@
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0); }
 
+.m-module.m-element-slider .m-module-content {
+  background: url(assets\img\backgrounds\slider-fire-background.png);
+  width: 1796;
+  height: 489; }
+
 .m-module.m-element-slider .m-elements-container {
   width: 100%;
   position: relative;
