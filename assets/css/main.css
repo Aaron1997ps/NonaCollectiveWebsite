@@ -254,6 +254,13 @@
   width: 100%;
   position: relative;
   height: 110px; }
+  .m-module.m-element-slider .m-elements-container .m-arrow {
+    position: absolute;
+    top: 50px; }
+  .m-module.m-element-slider .m-elements-container .m-left {
+    left: 1px; }
+  .m-module.m-element-slider .m-elements-container .m-right {
+    right: 1px; }
   .m-module.m-element-slider .m-elements-container .m-element {
     position: absolute;
     height: 110px;

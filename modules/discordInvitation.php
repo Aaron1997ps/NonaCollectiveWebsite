@@ -14,7 +14,7 @@
                     <div class="m-hor">
                         <div class="m-inviteButton">
                             <img src="../assets/img/discord-logo.svg" alt="" class="m-discord">
-                            <a href="#" class="m-text">Join our Discord</a>
+                            <a href="https://discord.gg/cppJ8FW" class="m-text">Join our Discord</a>
                         </div>
                     </div>
                 </div>
