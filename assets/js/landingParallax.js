@@ -9,6 +9,8 @@ $(document).ready(function () {
         var speed = Math.random() * 5 + 1;
         var height = Math.random() * 40;
         var width = Math.random() * 100;
+        var delay = Math.random() * 100;
+        var duration = Math.random() * 200000;
 
         $('.m-clouds').append('<img class="m-cloud-' + i + '" src="assets/img/nature_scene/clouds/Sunny' + index + '.png">');
         var cloud = $('.m-cloud-' + i);
@@ -18,7 +20,9 @@ $(document).ready(function () {
             'height': 'auto',
             'top': height + '%',
             'left':  width + '%',
-            'position': 'absolute'
+            'position': 'absolute',
+            'animation-delay' : delay + 'ms',
+            'animation-duration' : duration + 'ms'
         });
     }
 
