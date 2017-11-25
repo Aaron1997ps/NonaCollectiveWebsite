@@ -1,0 +1,30 @@
+<svg width="87" height="109" viewBox="0 0 87 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>PA logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(38 338)">
+<g id="PA logo">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-11.8635 -338)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-11.8636 -275.583)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(13.6301 -307.953)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(-38 -307.953)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 34.9414 29.1945L 17.46 46.5621L 1.30757e-06 29.1945L 17.46 1.30065e-06L 34.9414 29.1945Z"/>
+<path id="path1_fill" d="M 34.9414 17.3889L 17.46 0L 0 17.3889L 17.46 46.5834L 34.9414 17.3889Z"/>
+<path id="path2_fill" d="M 21.6161 24.5277L 35.3699 48.6078L 34.9414 49.034L 24.6368 49.034L 1.30757e-06 24.5277L 24.6368 -1.30065e-06L 34.9414 -1.30065e-06L 35.3699 0.426196L 21.6161 24.5277Z"/>
+<path id="path3_fill" d="M 13.7538 24.5277L -3.26894e-07 48.6078L 0.428466 49.034L 10.7116 49.034L 35.3699 24.5277L 10.7116 -1.30065e-06L 0.428466 -1.30065e-06L -3.26894e-07 0.426196L 13.7538 24.5277Z"/>
+</defs>
+</svg>

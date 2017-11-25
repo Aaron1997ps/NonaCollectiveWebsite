@@ -9,21 +9,21 @@
                 <div class="m-update" style="background-image: url('assets/img/updates/image 3.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
                 <div class="m-update" style="background-image: url('assets/img/updates/image 5.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
                 <div class="m-update" style="background-image: url('assets/img/updates/image 4.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
@@ -32,21 +32,21 @@
                 <div class="m-update" style="background-image: url('assets/img/updates/image 3.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
                 <div class="m-update" style="background-image: url('assets/img/updates/image 4.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
                 <div class="m-update" style="background-image: url('assets/img/updates/image 5.png')">
                     <div class="m-overlay"></div>
                     <div class="m-update-text">
-                        <div class="m-update-tag">Deverloper Update 2.1.3</div>
+                        <div class="m-update-tag">Developer Update 2.1.3</div>
                         <div class="m-headline">Region Update - Sky</div>
                     </div>
                 </div>
