@@ -263,7 +263,7 @@
         transform: translate(50%, 0); }
     .m-module.m-element-slider .m-module-content .m-arrow {
       position: absolute;
-      top: 100%;
+      top: 50%;
       z-index: 20;
       -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
@@ -275,7 +275,8 @@
   .m-module.m-element-slider .m-elements-container {
     width: 100%;
     position: relative;
-    height: 110px; }
+    height: 110px;
+    margin-top: 50px; }
     .m-module.m-element-slider .m-elements-container .m-element {
       position: absolute;
       height: 110px;
