@@ -1,4 +1,9 @@
 <div class="m-landing">
+    <div class='m-title-container'>
+      <img class='m-title-crystal' src='../assets/img/icons/landing-crystal-logo.svg'>
+      <img class='m-title' src='../assets/img/landing-title.png'>
+    </div>
+    <a href='#'><img class='m-landing-button' src='../assets/img/landing-button.png'></a> 
     <div class="m-parallax-container">
         <div class="m-canvas">
             <div class="m-sky-gradient"></div>
