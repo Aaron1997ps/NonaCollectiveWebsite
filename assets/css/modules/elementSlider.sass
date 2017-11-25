@@ -1,19 +1,46 @@
 
 .m-module.m-element-slider
+	margin-top: 5%
+	margin-bottom: 5%
+	margin-left: 2.5%
 	background:
 		image: url("../img/backgrounds/slider-fire-background.png")
-		size: cover
 		position: center
-	width: 100%
+	width: 1796px
 	height: 489px
 	overflow: hidden
 
 	.m-module-content
 		position: relative
 
+		.m-elements-text-container
+			font-family: Gilroy
+			color: white
+
+			.m-text-title
+				position: absolute
+				font-size: 24px
+				top: 150%
+				right: 50%
+				transform: translate(50%, 0)
+
+			.m-down-arrow
+				position: absolute
+				right: 50%
+				top: 185%
+				transform: translate(50%, 0)
+
+			.m-text-desc
+				position: absolute
+				font-size: 16px
+				width: 492
+				right: 50%
+				top: 250%
+				transform: translate(50%, 0)
+
 		.m-arrow
 			position: absolute
-			top: 50%
+			top: 100%
 			z-index: 20
 			transform: translate(0, -50%)
 
