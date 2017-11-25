@@ -224,7 +224,25 @@
           margin-right: 40px; }
 
 .m-module.m-element-slider {
+  background-image: url("../img/backgrounds/slider-fire-background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 489px;
   overflow: hidden; }
+  .m-module.m-element-slider .m-module-content {
+    position: relative; }
+    .m-module.m-element-slider .m-module-content .m-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 20;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+      .m-module.m-element-slider .m-module-content .m-arrow.m-left {
+        left: 1px; }
+      .m-module.m-element-slider .m-module-content .m-arrow.m-right {
+        right: 1px; }
   .m-module.m-element-slider .m-elements-container {
     width: 100%;
     position: relative;
