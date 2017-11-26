@@ -29,8 +29,9 @@ if (strpos($_GET['path'], 'api/') !== false && strpos($_GET['path'], 'api/') == 
 MBase::initialize();
 
 
-
-if ($_GET['path'] != "") {
+if($_GET['path'] == "login") {
+    include("login.php");
+} else if ($_GET['path'] != "") {
     foreach ($whitelist as $item) {
         $pos = strpos($_GET["path"], $item);
         if ($pos . "" == "0") {
