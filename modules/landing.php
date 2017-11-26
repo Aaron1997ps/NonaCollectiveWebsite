@@ -1,4 +1,4 @@
-<div class="m-landing">
+<div class="m-landing m-inset">
     <div class='m-title-container'>
       <img class='m-title-crystal' src='../assets/img/icons/landing-crystal-logo.svg'>
       <img class='m-title' src='../assets/img/landing-title.png'>
@@ -6,11 +6,6 @@
     <a class='m-landing-button' href='#slider'>
         <span class="m-icon"><img src="../assets/img/icons/arrow-down-simple.svg" alt=""></span>
         <span class="m-text">Discover Amaranth</span>
-    </a>
-
-    <a class='m-landing-button' href='#updates' style="left: 500px">
-        <span class="m-icon"><img src="../assets/img/icons/arrow-down-simple.svg" alt=""></span>
-        <span class="m-text">Discover updates</span>
     </a>
     <div class="m-parallax-container">
         <div class="m-canvas">

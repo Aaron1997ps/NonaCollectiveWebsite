@@ -5,7 +5,7 @@ function prnt($name) {
 }
 ?>
 
-<div class="m-module m-element-slider" id="slider">
+<div class="m-module m-element-slider m-inset" id="slider">
     <div class="m-module-content">
         <img class="m-arrow m-left" src="assets/img/icons/amaranth-arrow-left.svg">
         <img class="m-arrow m-right" src="assets/img/icons/amaranth-arrow-right.svg">

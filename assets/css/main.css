@@ -123,6 +123,7 @@
       font-weight: 200; }
 
 .m-module-updates {
+  margin-top: 80px;
   margin-bottom: 160px; }
   .m-module-updates .m-module-content .m-headline-container {
     margin-bottom: 40px; }
@@ -224,14 +225,12 @@
           margin-right: 40px; }
 
 .m-module.m-element-slider {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 2.5%;
   background-image: url("../img/backgrounds/slider-fire-background.png");
   background-position: center;
-  width: 1796px;
+  background-size: cover;
   height: 489px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 80px; }
   .m-module.m-element-slider .m-module-content {
     position: relative; }
     .m-module.m-element-slider .m-module-content .m-elements-text-container {
@@ -291,7 +290,11 @@
       top: 50%;
       -webkit-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out; }
+      transition: all 200ms ease-in-out;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
       .m-module.m-element-slider .m-elements-container .m-element.m-01 {
         opacity: 0;
         -webkit-transform: translate(-50%, -50%) scale(0);
@@ -303,7 +306,7 @@
         -webkit-transform: translate(-50%, -50%) scale(0.4);
         -ms-transform: translate(-50%, -50%) scale(0.4);
         transform: translate(-50%, -50%) scale(0.4);
-        left: 5%; }
+        left: 10%; }
       .m-module.m-element-slider .m-elements-container .m-element.m-03 {
         opacity: .6;
         -webkit-transform: translate(-50%, -50%) scale(0.6);
@@ -339,7 +342,7 @@
         -webkit-transform: translate(-50%, -50%) scale(0.4);
         -ms-transform: translate(-50%, -50%) scale(0.4);
         transform: translate(-50%, -50%) scale(0.4);
-        left: 95%; }
+        left: 90%; }
       .m-module.m-element-slider .m-elements-container .m-element.m-09 {
         opacity: 0;
         -webkit-transform: translate(-50%, -50%) scale(0);
@@ -359,8 +362,10 @@
   100% {
     left: 120%; } }
 
+.m-wrap {
+  padding-top: 50px; }
+
 .m-landing {
-  width: 100%;
   height: 90%;
   position: relative; }
   .m-landing .m-title-container {
@@ -492,3 +497,10 @@ body {
     max-width: 20em;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 20px; }
+
+.m-inset {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 8px; }
