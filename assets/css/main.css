@@ -444,12 +444,15 @@
       animation-iteration-count: infinite; }
     .m-landing .m-parallax-container img, .m-landing .m-parallax-container .m-sky-gradient {
       height: 100%;
+      width: 100%;
       position: absolute;
       top: 0;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, 0);
+      -o-object-fit: cover;
+      object-fit: cover; }
 
 * {
   font-family: "Source Sans Pro", sans-serif; }
