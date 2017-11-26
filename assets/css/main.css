@@ -452,7 +452,9 @@
       -webkit-animation-name: clouds;
       animation-name: clouds;
       -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite; }
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear; }
     .m-landing .m-parallax-container img, .m-landing .m-parallax-container .m-sky-gradient {
       height: 100%;
       width: 100%;
