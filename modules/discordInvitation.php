@@ -12,10 +12,10 @@
                         <h2 class="m-subtitle">Come and join us on our discord!</h2>
                     </div>
                     <div class="m-hor">
-                        <div class="m-inviteButton">
+                        <a class="m-inviteButton" href="https://discord.gg/cppJ8FW">
                             <img src="../assets/img/discord-logo.svg" alt="" class="m-discord">
-                            <a href="https://discord.gg/cppJ8FW" class="m-text">Join our Discord</a>
-                        </div>
+                            <div class="m-text">Join our Discord</div>
+                        </a>
                     </div>
                 </div>
 

@@ -78,7 +78,8 @@
           align-items: center;
           -webkit-transition: all 400ms cubic-bezier(1, 0, 0, 1);
           -o-transition: all 400ms cubic-bezier(1, 0, 0, 1);
-          transition: all 400ms cubic-bezier(1, 0, 0, 1); }
+          transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          text-decoration: none; }
           .m-module-discordInvitation .m-module-content .m-vert-div .m-vert .m-hor-div .m-hor .m-inviteButton:hover {
             -webkit-transform: scale(1.08);
             -ms-transform: scale(1.08);
