@@ -38,9 +38,7 @@ $(document).ready(function () {
     if (getOS() !== 'Windows') {
         return false;
     }
-
-
-
+    
     var time;
     var interval;
     var scrolling = false;
@@ -58,7 +56,10 @@ $(document).ready(function () {
         else
             currentScroll -= distance;
 
-        currentScroll = Math.min(Math.max(currentScroll, 0), $('body').height());
+
+        currentScroll = Math.min(Math.max(currentScroll, 0), $(document).height() - $(window).height());
+
+        console.log(currentScroll);
         time = 0;
 
         var current = $(window).scrollTop();

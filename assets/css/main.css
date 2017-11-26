@@ -78,7 +78,8 @@
           align-items: center;
           -webkit-transition: all 400ms cubic-bezier(1, 0, 0, 1);
           -o-transition: all 400ms cubic-bezier(1, 0, 0, 1);
-          transition: all 400ms cubic-bezier(1, 0, 0, 1); }
+          transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          text-decoration: none; }
           .m-module-discordInvitation .m-module-content .m-vert-div .m-vert .m-hor-div .m-hor .m-inviteButton:hover {
             -webkit-transform: scale(1.08);
             -ms-transform: scale(1.08);
@@ -449,12 +450,15 @@
       animation-iteration-count: infinite; }
     .m-landing .m-parallax-container img, .m-landing .m-parallax-container .m-sky-gradient {
       height: 100%;
+      width: 100%;
       position: absolute;
       top: 0;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, 0);
+      -o-object-fit: cover;
+      object-fit: cover; }
 
 * {
   font-family: "Source Sans Pro", sans-serif; }
@@ -464,7 +468,8 @@ html {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
   body h1 {
     color: #888; }
 

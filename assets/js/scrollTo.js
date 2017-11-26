@@ -1,7 +1,7 @@
 var scrollToInterval;
 $(document).ready(function () {
     $("a[href]").click(function (e) {
-        if ($(this).attr('href').startsWith("http://")) return;
+        if ($(this).attr('href').indexOf("#") !== 0) return;
         e.preventDefault();
 
         console.log("scroll to" + $(this).attr('href'));
