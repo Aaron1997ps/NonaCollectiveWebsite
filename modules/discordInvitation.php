@@ -1,4 +1,4 @@
-<div class="m-module m-module-discordInvitation">
+<div class="m-module m-module-discordInvitation" id="discord">
     <div class="m-module-content">
         <div class="m-vert-div">
             <div class="m-vert">

@@ -60,7 +60,7 @@ class MDatabase {
     public function executeQuery($sql)
     {
         $result = mysqli_query($this->con, $sql);
-        if (!$result) return self::error((MError::QUERY_ERROR));
+        if (!$result) return self::error(mysqli_error($this->con));
 
         return $result;
     }
@@ -70,7 +70,7 @@ class MDatabase {
     }
 
     private static function error($msg) {
-        if (self::$dieError) die($msg);
+        echo($msg);
         return $msg;
     }
 }
@@ -80,9 +80,9 @@ class MDatabaseAuth {
      * @param $username string
      * @return MUser|null
      */
-    public static function getTimeslots($username) {
+    public static function getUser($username) {
         $db = MDatabase::init();
-        $res = $db->executeQuery("SELECT `id_timeslot`, `StartTimeslot` FROM `tbl_timeslots` WHERE `username`='" . $db->quote($username). "';");
+        $res = $db->executeQuery("SELECT * FROM `tbl_user` WHERE `username`='" . $db->quote($username). "';");
 
         if (!$res) {
             $db->close();
@@ -126,5 +126,52 @@ class MDatabaseAuth {
         $db->close();
         if (!$res) return null;
         return $ses;
+    }
+}
+
+class MDatabaseElement {
+    /**
+     * sets the description of an element
+     * @param $name string name
+     * @param $description string description
+     * @return bool
+     */
+    public static function setDescription($name, $description) {
+        $name = strtolower($name);
+
+        $db = MDatabase::init();
+        $res = $db->executeQuery("REPLACE INTO `tbl_element_description` (`name`, `description`) VALUES ('" . $name . "','" . $description . "')");
+
+        $db->close();
+        if (!$res) return false;
+        return true;
+    }
+
+    /**
+     * gets the description of an element
+     * @param $name string name
+     * @return string
+     */
+    public static function getDescription($name) {
+        $name = strtolower($name);
+
+        $db = MDatabase::init();
+        $res = $db->executeQuery("SELECT `description` FROM `tbl_element_description` WHERE `name` = '" . $name . "'");
+
+        if (!$res) {
+            $db->close();
+            return "TO BE FILLED BY STORY";
+        }
+
+        if (mysqli_num_rows($res) != 1) {
+            $db->close();
+            return "TO BE FILLED BY STORY";
+        }
+
+        $result = mysqli_fetch_array($res);
+        $db->close();
+
+
+        return $result["description"];
     }
 }
