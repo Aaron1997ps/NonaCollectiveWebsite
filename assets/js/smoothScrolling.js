@@ -24,36 +24,46 @@ function getOS() {
     return os;
 }
 
+var currentScroll;
+
+function updateScroll() {
+    currentScroll = $(window).scrollTop();
+}
+
 $(document).ready(function () {
+    updateScroll();
     if (window.navigator.msPointerEnabled)
         return false;
 
     if (getOS() !== 'Windows') {
         return false;
     }
-
-
-    var where = $(document).scrollTop();
+    
     var time;
     var interval;
     var scrolling = false;
 
 
     $(window).on('mousewheel DOMMouseScroll', function (e) {
+        clearInterval(scrollToInterval);
         scrolling = true;
         e.preventDefault();
-        where += e.originalEvent.deltaY;
+
+        currentScroll += e.originalEvent.deltaY;
 
         if (e.originalEvent.deltaY > 0)
-            where += distance;
+            currentScroll += distance;
         else
-            where -= distance;
+            currentScroll -= distance;
 
-        where = Math.min(Math.max(where, 0), $('body').height());
+
+        currentScroll = Math.min(Math.max(currentScroll, 0), $(document).height() - $(window).height());
+
+        console.log(currentScroll);
         time = 0;
 
         var current = $(window).scrollTop();
-        var dest = where - current;
+        var dest = currentScroll - current;
 
         clearInterval(interval);
 

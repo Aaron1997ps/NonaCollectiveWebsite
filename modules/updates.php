@@ -1,4 +1,4 @@
-<div class="m-module m-module-updates">
+<div class="m-module m-module-updates" id="updates">
     <div class="m-module-content">
         <div class="m-headline-container">
             <div class="m-headline">Updates</div>
