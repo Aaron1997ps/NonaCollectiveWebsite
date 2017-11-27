@@ -357,15 +357,15 @@
 
 @-webkit-keyframes clouds {
   0% {
-    left: -20%; }
+    left: -5%; }
   100% {
-    left: 120%; } }
+    left: 110%; } }
 
 @keyframes clouds {
   0% {
-    left: -20%; }
+    left: -5%; }
   100% {
-    left: 120%; } }
+    left: 110%; } }
 
 .m-wrap {
   padding-top: 50px; }
@@ -451,8 +451,8 @@
     .m-landing .m-parallax-container .m-clouds img {
       -webkit-animation-name: clouds;
       animation-name: clouds;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
       -webkit-animation-timing-function: linear;
       animation-timing-function: linear; }
     .m-landing .m-parallax-container img, .m-landing .m-parallax-container .m-sky-gradient {
