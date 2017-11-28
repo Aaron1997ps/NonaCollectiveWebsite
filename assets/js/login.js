@@ -1,7 +1,9 @@
 $(document).ready(function () {
     login.initialize();
 
-
+    login.l_username.val('reolat');
+    login.l_password.val('hashed');
+    login.b_login.click();
 });
 
 var login = {
@@ -9,6 +11,7 @@ var login = {
     l_username: null,
     l_password: null,
     b_login: null,
+
     initialize: function () {
         this.content = $('.m-login-content');
         this.l_username = this.content.find('.m-username');
@@ -43,6 +46,7 @@ var login = {
            }
 
             console.log("yee");
+            location.reload();
         });
     }
 };
