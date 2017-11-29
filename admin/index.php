@@ -7,7 +7,21 @@
 </head>
 
 <body>
-<div class="m-logout">Logout</div>
+
+<div class="m-admin">
+    <div class="m-aside">
+        <img class="m-logo" src="../assets/img/icons/landing-crystal-logo.svg">
+        <div class="m-nav">
+            <div class="m-module">
+                <img class="m-icon" src="../assets/img/icons/modules.svg">
+                <div class="m-title">Modules</div>
+            </div>
+        </div>
+    </div>
+    <div class="m-view">
+
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
