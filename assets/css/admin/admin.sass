@@ -107,6 +107,7 @@ $nav-bg: rgba(white, 0.4)
     .m-content
       .m-cards
         display: flex
+        flex-wrap: wrap
 
         .m-card
           display: flex
@@ -114,7 +115,7 @@ $nav-bg: rgba(white, 0.4)
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.13)
           border-radius: 8px
           padding: 10px 35px
-          margin: 10px 10px 10px 0
+          margin: 10px 10px 0 0
           transition: all 200ms ease-out
 
           &:hover
@@ -176,16 +177,18 @@ $nav-bg: rgba(white, 0.4)
 
           .m-save
             display: flex !important
-            justify-content: flex-end
+            justify-content: center
             align-items: center
-            width: 108%
+            height: 75px
+            padding: 0 25px
+            background: $nav-accent
+            border-radius: 3px
+            margin-top: 25px
 
             .m-text
-              padding: 8px 15px
-              background: $nav-accent
-              border-radius: 5px
-              margin-top: 25px
               color: white
+              font-size: 16px
+              text-transform: uppercase
 
               &:hover
                 cursor: pointer

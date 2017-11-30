@@ -1,4 +1,4 @@
-<div class="m-view m-view-modules">
+<div class="m-view m-view-modules" style="display: none">
     <div class="m-header">
         <div class="m-title-container">
             <div class="m-title">
@@ -11,7 +11,7 @@
     </div>
     <div class="m-content">
         <div class="m-cards">
-            <div class="m-card">
+            <div class="m-card" target="elements">
                 <div class="m-ico">
                     <img src="../assets/img/player/earth.png" alt="">
                 </div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-card">
+            <div class="m-card" target="none">
                 <div class="m-ico">
                     <img src="../assets/img/player/nature.png" alt="">
                 </div>

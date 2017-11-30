@@ -35,10 +35,22 @@ var api = {
             api.send(this.endpoint + url, param, call)
         },
         getDescription: function (name, call) {
-            this.send("getDescription", {name: name}, call)
+            this.send("getDescription", {name: name}, function (data) {
+                if (!data.success) {
+                    console.log("CRITICAL: couldn't load description of the element " + name);
+                    return;
+                }
+                call(data.response);
+            })
         },
         setDescription: function (name, description, call) {
-            this.send("setDescription", {name: name, description: description}, call)
+            this.send("setDescription", {name: name, description: description}, function (data) {
+                if (!data.success) {
+                    console.log("CRITICAL: couldn't save description of the element " + name);
+                    return;
+                }
+                call();
+            })
         }
     }
 

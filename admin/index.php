@@ -31,12 +31,18 @@
             </div>
         </div>
     </div>
+    <?php require "views/Modules.php"?>
     <?php require "views/Elements.php"?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-<script src="../assets/js/admin.js"></script>
+<!-- ELEMENTS! STAY AT TOP! -->
+<script src="../assets/js/admin/views/V_MODULES.js"></script>
+<script src="../assets/js/admin/views/V_ELEMENTS.js"></script>
+<!-- END ELEMENTS! STAY AT TOP! -->
+
+<script src="../assets/js/admin/admin.js"></script>
 <script src="../assets/js/api/api.js"></script>
 
 </body>
