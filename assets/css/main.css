@@ -482,14 +482,14 @@
         display: flex;
         color: rgba(255, 255, 255, 0.4);
         padding: 5px 0; }
-        .m-admin .m-aside .m-nav .m-module .m-selected {
-          color: #1493FF !important; }
         .m-admin .m-aside .m-nav .m-module .m-icon {
           width: 20px; }
         .m-admin .m-aside .m-nav .m-module .m-title {
           padding-left: 15px;
           font-size: 21px;
           font-weight: 700; }
+      .m-admin .m-aside .m-nav .m-selected {
+        color: #1493FF !important; }
   .m-admin .m-view {
     width: 100%;
     padding: 55px; }

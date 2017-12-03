@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     login.l_username.val('reolat');
     login.l_password.val('hashed');
-    login.b_login.click();
+    //login.b_login.click();
 });
 
 var login = {

@@ -17,7 +17,7 @@
     <div class="m-aside">
         <img class="m-logo" src="../assets/img/icons/landing-crystal-logo.svg">
         <div class="m-nav">
-            <div class="m-module">
+            <div class="m-module" target="modules">
                 <img class="m-icon" src="../assets/img/icons/modules.svg">
                 <div class="m-title">Modules</div>
             </div>
