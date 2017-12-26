@@ -40,6 +40,7 @@
 <!-- ELEMENTS! STAY AT TOP! -->
 <script src="../assets/js/admin/views/V_MODULES.js"></script>
 <script src="../assets/js/admin/views/V_ELEMENTS.js"></script>
+<script src="../assets/js/admin/views/V_ARTICLES.js"></script>
 <!-- END ELEMENTS! STAY AT TOP! -->
 
 <script src="../assets/js/admin/admin.js"></script>

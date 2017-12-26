@@ -1,4 +1,4 @@
-var views = [V_MODULES, V_ELEMENTS];
+var views = [V_MODULES, V_ELEMENTS, V_ARTICLES];
 var navigation = $('.m-nav');
 
 $(document).ready(function () {

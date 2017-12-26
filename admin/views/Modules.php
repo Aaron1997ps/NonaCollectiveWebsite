@@ -24,6 +24,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="m-card" target="none">
                 <div class="m-ico">
                     <img src="../assets/img/player/nature.png" alt="">
@@ -34,6 +35,20 @@
                     </div>
                     <div class="m-subtitle">
                         TEAM
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-card" target="articles">
+                <div class="m-ico">
+                    <img src="../assets/img/player/shadow.png" alt="">
+                </div>
+                <div class="m-text">
+                    <div class="m-title">
+                        Blog
+                    </div>
+                    <div class="m-subtitle">
+                        all dem articles
                     </div>
                 </div>
             </div>
