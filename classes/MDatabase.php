@@ -174,4 +174,29 @@ class MDatabaseElement {
 
         return $result["description"];
     }
+
+    public static function getAllDescriptions() {
+        $db = MDatabase::init();
+        $res = $db->executeQuery("SELECT * FROM `tbl_element_description`");
+
+        if (!$res) {
+            $db->close();
+            return array();
+        }
+
+        if (mysqli_num_rows($res) == 0) {
+            $db->close();
+            return array();
+        }
+
+        $result = array();
+
+        while ($row = $res->fetch_assoc()) {
+            $result[$row["name"]] = $row["description"];
+        }
+
+        $db->close();
+
+        return $result;
+    }
 }

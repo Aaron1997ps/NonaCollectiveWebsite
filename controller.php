@@ -1,7 +1,5 @@
 <?php
 
-
-
 $whitelist = ["assets"];
 
 ini_set('display_errors', 1);
@@ -29,8 +27,12 @@ if (strpos($_GET['path'], 'api/') !== false && strpos($_GET['path'], 'api/') == 
 MBase::initialize();
 
 
+if($_GET['path'] == "admin") {
+    if (MBase::getUser() == null)   include("admin/login.php");
+    else                            include("admin/index.php");
 
-if ($_GET['path'] != "") {
+
+} else if ($_GET['path'] != "") {
     foreach ($whitelist as $item) {
         $pos = strpos($_GET["path"], $item);
         if ($pos . "" == "0") {
