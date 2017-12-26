@@ -1,27 +1,3 @@
-<?php
-function insertElement($name) {?>
-    <div class="m-card" name="<?php echo($name) ?>">
-                <div class="m-ico">
-                    <img src="../../assets/img/player/<?php echo($name) ?>.png" alt="">
-                </div>
-                <div class="m-text">
-                    <div class="m-title">
-                        <?php echo(ucwords($name)) ?>
-                    </div>
-                </div>
-                <div style="display: none" class="m-description" contenteditable="true">
-        LOADING....
-                </div>
-                <div class="m-button-container">
-                    <div class="m-save" style="display: none">
-                        <div class="m-text">Save</div>
-                    </div>
-                </div>
-            </div>
-<?php
-}
-?>
-
 <div class="m-view m-view-articles" style="display: none">
     <div class="m-header">
         <div class="m-title-container">
@@ -29,24 +5,48 @@ function insertElement($name) {?>
                 Modules
             </div>
             <div class="m-subtitle">
-                Elements
+                Articles
             </div>
         </div>
     </div>
 
     <div class="m-content">
         <div class="m-cards">
-            <?php
-            insertElement('earth');
-            insertElement('fire');
-            insertElement('ice');
-            insertElement('light');
-            insertElement('metal');
-            insertElement('nature');
-            insertElement('neutral');
-            insertElement('shadow');
-            insertElement('water');
-            ?>
+            <div class="m-article" style="background-image: url('/assets/img/updates/image 3.png')">
+                <div class="m-overlay"></div>
+                <div class="m-update-text">
+                    <div class="m-update-tag">Developer Update 2.1.3</div>
+                    <div class="m-headline">Region Update - Sky</div>
+                </div>
+            </div>
+            <div class="m-article" style="background-image: url('/assets/img/updates/image 3.png')">
+                <div class="m-overlay"></div>
+                <div class="m-update-text">
+                    <div class="m-update-tag">Developer Update 2.1.3</div>
+                    <div class="m-headline">Region Update - Sky</div>
+                </div>
+            </div>
+            <div class="m-article" style="background-image: url('/assets/img/updates/image 3.png')">
+                <div class="m-overlay"></div>
+                <div class="m-update-text">
+                    <div class="m-update-tag">Developer Update 2.1.3</div>
+                    <div class="m-headline">Region Update - Sky</div>
+                </div>
+            </div>
+            <div class="m-article" style="background-image: url('/assets/img/updates/image 3.png')">
+                <div class="m-overlay"></div>
+                <div class="m-update-text">
+                    <div class="m-update-tag">Developer Update 2.1.3</div>
+                    <div class="m-headline">Region Update - Sky</div>
+                </div>
+            </div>
+            <div class="m-article" style="background-image: url('/assets/img/updates/image 3.png')">
+                <div class="m-overlay"></div>
+                <div class="m-update-text">
+                    <div class="m-update-tag">Developer Update 2.1.3</div>
+                    <div class="m-headline">Region Update - Sky</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

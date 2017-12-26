@@ -1,0 +1,46 @@
+.m-update {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-radius: 8px;
+  background-size: 130%;
+  background-position: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+  .m-update:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    background-size: 100%;
+    -webkit-box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.18); }
+    .m-update:hover .m-overlay {
+      top: 100%; }
+  .m-update .m-overlay {
+    height: 100%;
+    width: 100%;
+    background: -webkit-radial-gradient(42.73% 67.17%, 313.19px, rgba(131, 119, 223, 0.4) 0%, rgba(59, 61, 122, 0.4) 100%);
+    background: -o-radial-gradient(42.73% 67.17%, 313.19px, rgba(131, 119, 223, 0.4) 0%, rgba(59, 61, 122, 0.4) 100%);
+    background: radial-gradient(313.19px at 42.73% 67.17%, rgba(131, 119, 223, 0.4) 0%, rgba(59, 61, 122, 0.4) 100%);
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    top: 0;
+    left: 0; }
+  .m-update .m-update-text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white; }
+    .m-update .m-update-text .m-update-tag {
+      font-size: 0.7em; }
+    .m-update .m-update-text .m-headline {
+      font-size: 1.1em;
+      font-weight: 600; }
+  .m-update:not(:last-child) {
+    margin-right: 40px; }
