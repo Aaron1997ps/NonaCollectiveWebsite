@@ -210,6 +210,19 @@
           .m-login-wrapper .m-login-content .m-footer .m-signup a:hover {
             color: #f96b6b; }
 
+* {
+  font-family: "Source Sans Pro", sans-serif; }
+
+html {
+  font-size: 20px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+  body h1 {
+    color: #888; }
+
 .m-admin {
   display: -webkit-box;
   display: -webkit-flex;
