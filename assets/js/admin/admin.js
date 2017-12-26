@@ -1,4 +1,4 @@
-var views = [V_MODULES, V_ELEMENTS, V_ARTICLES];
+var views = [V_MODULES, V_ELEMENTS, V_ARTICLES, V_ARTICLE];
 var navigation = $('.m-nav');
 
 $(document).ready(function () {
@@ -22,7 +22,7 @@ var viewManager = {
         }
         return null;
     },
-    open: function (id) {
+    open: function (id, options) {
         var view = this.getFromId(id);
         if (!view) {
             console.log("CRITICAL: can't open view " + id + "!");
@@ -33,7 +33,7 @@ var viewManager = {
             this.current._hide();
         }
 
-        view._show();
+        view._show(options);
         this.current = view;
 
         //set nav accent

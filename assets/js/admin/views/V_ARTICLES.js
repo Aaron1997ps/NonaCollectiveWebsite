@@ -7,8 +7,7 @@ var V_ARTICLES = {
         var self = this;
         self.self = $('.m-view-articles');
 
-        self.updates = self.self.find('.m-update');
-
+        self.updates = self.self.find('.m-cards > .m-article');
     },
 
     _show: function () {
@@ -22,8 +21,12 @@ var V_ARTICLES = {
     },
 
     _bind: function () {
+        this.updates.click(function () {
+            viewManager.open('article', {'uid': $(this).attr('uid')});
+        });
     },
 
     _unbind: function () {
+        this.updates.off();
     }
 };
