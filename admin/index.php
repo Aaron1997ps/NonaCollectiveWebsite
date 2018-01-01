@@ -34,6 +34,7 @@
     <?php require "views/Modules.php"?>
     <?php require "views/Elements.php"?>
     <?php require "views/Articles.php"?>
+    <?php require "views/Article.php"?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
