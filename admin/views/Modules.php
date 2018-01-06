@@ -11,6 +11,19 @@
     </div>
     <div class="m-content">
         <div class="m-cards">
+            <div class="m-card" target="article">
+                <div class="m-ico">
+                    <img src="../assets/img/player/earth.png" alt="">
+                </div>
+                <div class="m-text">
+                    <div class="m-title">
+                        Article
+                    </div>
+                    <div class="m-subtitle">
+                        Landing
+                    </div>
+                </div>
+            </div>
             <div class="m-card" target="elements">
                 <div class="m-ico">
                     <img src="../assets/img/player/earth.png" alt="">

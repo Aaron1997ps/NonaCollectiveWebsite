@@ -294,6 +294,41 @@
   margin-right: 40px;
 }
 
+.m-inner-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.m-view-article .m-article-header {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.m-view-article .m-article-header .m-inner-content {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.m-view-article .m-article-header .m-inner-content .m-title {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.m-view-article .m-article-header .m-inner-content .m-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 * {
   font-family: "Source Sans Pro", sans-serif;
 }

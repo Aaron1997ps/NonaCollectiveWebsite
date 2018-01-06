@@ -33,6 +33,7 @@
     </div>
     <?php require "views/Modules.php"?>
     <?php require "views/Elements.php"?>
+    <?php require "views/Article.php"?>
     <?php require "views/Articles.php"?>
 </div>
 
