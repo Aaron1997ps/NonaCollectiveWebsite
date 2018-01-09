@@ -1,3 +1,22 @@
+/**
+ * Article
+ * @param {int} id
+ * @param {string} title
+ * @param {string} subtitle
+ * @param {int} timestamp
+ * @param {string} category
+ * @param {string} html
+ * @class
+ */
+var __Article = function (id, title, subtitle, timestamp, category, html) {
+    this.id = id;
+    this.title = title;
+    this.subtitle = subtitle;
+    this.timestamp = timestamp;
+    this.category = category;
+    this.html = html;
+};
+
 var api = {
     send: function (url, param, call) {
         console.log(url);
@@ -52,6 +71,32 @@ var api = {
                 call();
             })
         }
+    },
+
+    articles: {
+        endpoint: "/articles/",
+        send: function (url, param, call) {
+            api.send(this.endpoint + url, param, call)
+        },
+        getArticle: function (id, call) {
+            this.send("getArticle", {id: id}, function (data) {
+                if (!data.success) {
+                    console.log("CRITICAL: couldn't load article " + id);
+                    return;
+                }
+                var data1 = data.response[0];
+                call(new __Article(data1['id'], data1['title'], data1['subtitle'], data1['date'], data1['category_id'], data1['html']));
+            })
+        },
+        // setDescription: function (name, description, call) {
+        //     this.send("setDescription", {name: name, description: description}, function (data) {
+        //         if (!data.success) {
+        //             console.log("CRITICAL: couldn't save description of the element " + name);
+        //             return;
+        //         }
+        //         call();
+        //     })
+        // }
     }
 
 };

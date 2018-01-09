@@ -1,6 +1,8 @@
 var V_ARTICLE = {
     id: 'article',
     self: null,
+    uid: null,
+    article: null,
     l_subtitle: null,
 
     _initialize: function () {
@@ -9,12 +11,21 @@ var V_ARTICLE = {
     },
 
     _show: function (options) {
+        if (options === undefined || options['uid'] === undefined && options['uid'] === null) {
+            console.log('FATAL ERR: CAN\'T LOAD ARTICLE BECAUSE UID IS NULL!!');
+            return;
+        }
+
+        self.uid = options['uid'];
+        api.articles.getArticle(self.uid, function (data) {
+            console.log(data);
+            self.article = data;
+        });
+
         this._bind();
         this.self.css('display', 'block');
 
-        var uid = options['uid'];
-        console.log(uid);
-        this.l_subtitle.text("NR: " + uid);
+        this.l_subtitle.text("NR: " + self.uid);
     },
 
     _hide: function () {
@@ -27,9 +38,5 @@ var V_ARTICLE = {
     },
 
     _unbind: function () {
-        this.cards.each(function () {
-            $(this).off();
-        })
     }
 };
-

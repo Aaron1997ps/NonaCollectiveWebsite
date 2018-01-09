@@ -200,3 +200,73 @@ class MDatabaseElement {
         return $result;
     }
 }
+
+class MDatabaseArticle {
+//    /**
+//     * sets an article
+//     * @param $name string name
+//     * @param $description string description
+//     * @return bool
+//     */
+//    public static function setDescription($name, $description) {
+//        $name = strtolower($name);
+//
+//        $db = MDatabase::init();
+//        $res = $db->executeQuery("REPLACE INTO `tbl_element_description` (`name`, `description`) VALUES ('" . $name . "','" . $description . "')");
+//
+//        $db->close();
+//        if (!$res) return false;
+//        return true;
+//    }
+
+    /**
+     * gets an article
+     * @param $id int id
+     * @return array
+     */
+    public static function getDescription($id) {
+        $db = MDatabase::init();
+        $res = $db->executeQuery("SELECT * FROM `tbl_article` WHERE `id` = " . $id);
+
+        if (!$res) {
+            $db->close();
+            return null;
+        }
+
+        if (mysqli_num_rows($res) != 1) {
+            $db->close();
+            return null;
+        }
+
+        $result = mysqli_fetch_assoc($res);
+        $db->close();
+
+
+        return $result;
+    }
+
+    public static function getAllDescriptions() {
+        $db = MDatabase::init();
+        $res = $db->executeQuery("SELECT * FROM `tbl_element_description`");
+
+        if (!$res) {
+            $db->close();
+            return array();
+        }
+
+        if (mysqli_num_rows($res) == 0) {
+            $db->close();
+            return array();
+        }
+
+        $result = array();
+
+        while ($row = $res->fetch_assoc()) {
+            $result[$row["name"]] = $row["description"];
+        }
+
+        $db->close();
+
+        return $result;
+    }
+}
